@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <div className=" flex items-center justify-between p-2 bg-gray-300 shadow-md rounded-2xl md:ml-64 mt-1.5 w-[81%] font-Montserrat">
+    <div className=" flex items-center justify-between p-2 bg-gray-300 shadow-md rounded-2xl md:ml-64 mt-1.5 w-[81%] font-Montserrat mr-1.5">
         <div className="relative w-1/3 hidden sm:block">
         {/* <button className="hidden sm:block">
        <FontAwesomeIcon

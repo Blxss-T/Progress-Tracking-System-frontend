@@ -13,6 +13,7 @@ function App() {
     <Navbar />
     <Sidebar />
     <Dashboard />
+    
     <Routes>
         <Route path="/mail" element={<Mails />} />
         <Route path="/notifications" element={<Notification />} />
