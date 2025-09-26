@@ -1,5 +1,6 @@
 import React from 'react'
 import UserGreeting from './userGreeting'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Dashboard() {
   return (
@@ -10,7 +11,10 @@ function Dashboard() {
         <div className='flex justify-between p-1 '>
             <h2>Dashboard</h2>
             <div className='flex gap-1 flex-wrap-reverse'>
-            <button className="w-42  bg-gradient-to-br from-green-950 to-green-700 text-white  p-2 rounded-3xl">Import</button>
+            <button className="w-42  bg-gradient-to-br from-green-950 to-green-700 text-white  p-2 rounded-3xl">
+                <FontAwesomeIcon 
+                icon={FaPlus} /> Add Project
+            </button>
             <button className='w-40 border-3 border-green-950 text-green-950 p-2 rounded-3xl'>Import</button>
             </div>
             
