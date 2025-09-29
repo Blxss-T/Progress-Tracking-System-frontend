@@ -26,7 +26,7 @@ function Sidebar() {
   ];
 
   return (
-    <div className="md:w-60 h-full mx-3 rounded-2xl bg-gray-200 shadow-md p-4 fixed top-1.5">
+    <div className="md:w-60 h-full mx-3 rounded-2xl bg-gray-100 shadow-md p-4 fixed top-1.5">
       <h1 className="text-4xl text-green-950 mb-10">Tranquil</h1>
       {/* Menu Section */}
       <div className="mb-6">
