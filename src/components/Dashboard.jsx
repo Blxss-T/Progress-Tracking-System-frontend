@@ -26,58 +26,60 @@ function Dashboard() {
       <p>Plan, prioritize, and accomplish with ease.</p>
 
       {/* Dashboard Grid Section */}
-      <div className="p-6 bg-gray-100 min-h-screen">
-        
-        {/* 
-          🔥 Enhanced grid:
-          - 1 column on mobile
-          - 2 columns on small screens
-          - 4 columns on desktops
-          - full width with w-full
-        */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full h-screen text-xl">
-          
-          {/* Total Projects Card */}
-          <div className="bg-gradient-to-bl from-green-950 to-green-700 text-white rounded-2xl shadow p-4 flex flex-col items-center justify-between ">
-            <div className='flex justify-between items-center w-full'>
-              <p className=" ">Total Projects</p>
-              <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
-                <FontAwesomeIcon icon={faFolder} size="md" />
-              </div>
-            </div>
-            <h2 className="text-5xl mt-2">24</h2>
-            <div className='flex flex-row items-center justify-center'>
-             <Link to="/projects" className="flex items-center gap-2 hover:underline">
-                  <FontAwesomeIcon
-                    icon={faPaperclip}
-                    size="xs"
-                    className="text-white hover:text-blue-500"
-                  />
-                  <p className="text-sm">See your latest project</p>
-            </Link>
-            </div>
-          </div>
+<div className="p-4 bg-gray-100">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-full text-xl">
 
-          {/* Other top cards */}
-          <div className="bg-white rounded-2xl shadow p-4">Ended Projects</div>
-          <div className="bg-white rounded-2xl shadow p-4">Running Projects</div>
-          <div className="bg-white rounded-2xl shadow p-4">Pending Projects</div>
-
-          {/* Middle Row */}
-          <div className="col-span-2 bg-white rounded-2xl shadow p-4">
-            Project Analytics
-          </div>
-          <div className="bg-white rounded-2xl shadow p-4">Reminders</div>
-          <div className="bg-white row-span-2 rounded-2xl shadow p-4">Projects</div>
-
-          {/* Bottom Row */}
-          <div className="bg-white rounded-2xl shadow p-4">
-            Team Collaboration
-          </div>
-          <div className="bg-white rounded-2xl shadow p-4">Project Progress</div>
-          <div className="bg-white rounded-2xl shadow p-4">Time Tracker</div>
+    {/* Total Projects Card */}
+    <div className="bg-gradient-to-bl from-green-950 via-green-900 to-green-800 
+                    text-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
+      <div className='flex justify-between items-center w-full'>
+        <p>Total Projects</p>
+        <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
+          <FontAwesomeIcon icon={faFolder} size="md" />
         </div>
       </div>
+      <h2 className="text-4xl">24</h2>
+      <Link to="/projects" className="flex items-center gap-2 hover:underline text-sm text-amber-100">
+        <FontAwesomeIcon icon={faPaperclip} size="xs" />
+        See your latest project
+      </Link>
+    </div>
+
+    {/* Other summary cards */}
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Ended Projects
+    </div>
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Running Projects
+    </div>
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Pending Projects
+    </div>
+
+    {/* Middle Row */}
+    <div className="col-span-2 bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Project Analytics
+    </div>
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Reminders
+    </div>
+    <div className="bg-white row-span-2 rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Projects
+    </div>
+
+    {/* Bottom Row */}
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Team Collaboration
+    </div>
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Project Progress
+    </div>
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+      Time Tracker
+    </div>
+  </div>
+</div>
+
     </div>
   )
 }
