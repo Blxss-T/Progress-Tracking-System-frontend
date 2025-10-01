@@ -50,8 +50,8 @@ function Dashboard() {
     </div>
 
     {/* Other summary cards */}
-    <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col items-center justify-center">
-      <div className='flex justify-center items-center w-full'>
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
+      <div className='flex justify-center items-center w-full gap-6'>
         <p>Ended Projects</p>
         <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
           <FontAwesomeIcon 
@@ -59,8 +59,13 @@ function Dashboard() {
           className="text-black text-xl inline-block transform rotate-[45deg]" 
         />
         </div>
-
-      </div>
+        </div>
+        <h2 className="text-4xl">24</h2>
+      <Link to="/projects" className="flex items-center gap-2 hover:underline text-sm text-amber-100">
+        <FontAwesomeIcon icon={faPaperclip} size="xs" />
+        See your latest project
+      </Link>
+    
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Running Projects
