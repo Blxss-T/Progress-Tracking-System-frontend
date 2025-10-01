@@ -3,6 +3,7 @@ import UserGreeting from './userGreeting'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
 
@@ -35,7 +36,10 @@ function Dashboard() {
       <div className='flex justify-between items-center w-full'>
         <p>Total Projects</p>
         <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
-          <FontAwesomeIcon icon={faFolder} size="md" />
+          <FontAwesomeIcon 
+  icon={faArrowUp} 
+  className="text-black text-xl inline-block transform rotate-[45deg]" 
+/>
         </div>
       </div>
       <h2 className="text-4xl">24</h2>
@@ -46,8 +50,17 @@ function Dashboard() {
     </div>
 
     {/* Other summary cards */}
-    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
-      Ended Projects
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col items-center justify-center">
+      <div className='flex justify-center items-center w-full'>
+        <p>Ended Projects</p>
+        <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
+          <FontAwesomeIcon 
+          icon={faArrowUp} 
+          className="text-black text-xl inline-block transform rotate-[45deg]" 
+        />
+        </div>
+
+      </div>
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Running Projects
