@@ -38,22 +38,22 @@ function Dashboard() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full h-screen text-xl">
           
           {/* Total Projects Card */}
-          <div className="bg-white rounded-2xl shadow p-4 flex flex-col items-center justify-between ">
+          <div className="bg-gradient-to-bl from-green-950 to-green-700 text-white rounded-2xl shadow p-4 flex flex-col items-center justify-between ">
             <div className='flex justify-between items-center w-full'>
-              <p className="text-black">Total Projects</p>
-              <div className="bg-green-50 text-green-600 p-2 rounded-full hover:text-gray-500">
+              <p className=" ">Total Projects</p>
+              <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
                 <FontAwesomeIcon icon={faFolder} size="md" />
               </div>
             </div>
-            <h2 className="text-5xl text-black mt-2">24</h2>
+            <h2 className="text-5xl mt-2">24</h2>
             <div className='flex flex-row items-center justify-center'>
              <Link to="/projects" className="flex items-center gap-2 hover:underline">
                   <FontAwesomeIcon
                     icon={faPaperclip}
                     size="xs"
-                    className="text-gray-600 hover:text-blue-500"
+                    className="text-white hover:text-blue-500"
                   />
-                  <p className="text-sm text-gray-800">See your latest project</p>
+                  <p className="text-sm">See your latest project</p>
             </Link>
             </div>
           </div>
