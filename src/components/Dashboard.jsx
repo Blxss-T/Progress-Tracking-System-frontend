@@ -27,7 +27,7 @@ function Dashboard() {
 
       {/* Dashboard Grid Section */}
 <div className="p-4 bg-gray-100">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-full text-xl">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-full text-xl">
 
     {/* Total Projects Card */}
     <div className="bg-gradient-to-bl from-green-950 via-green-900 to-green-800 
@@ -57,13 +57,13 @@ function Dashboard() {
     </div>
 
     {/* Middle Row */}
-    <div className="col-span-2 bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+    <div className=" col-span-2 bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Project Analytics
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Reminders
     </div>
-    <div className="bg-white row-span-2 rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+    <div className="bg-white row-span-2 rounded-2xl shadow p-4  flex items-center justify-center">
       Projects
     </div>
 
