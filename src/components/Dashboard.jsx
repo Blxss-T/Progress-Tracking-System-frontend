@@ -51,28 +51,42 @@ function Dashboard() {
 
     {/* Other summary cards */}
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
-      <div className='flex justify-center items-center w-full gap-6'>
+      <div className='flex  items-center w-full gap-6'>
         <p>Ended Projects</p>
-        <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
+        <div className="border text-black p-2 rounded-full hover:text-gray-500">
           <FontAwesomeIcon 
           icon={faArrowUp} 
           className="text-black text-xl inline-block transform rotate-[45deg]" 
         />
         </div>
         </div>
-        <h2 className="text-4xl">24</h2>
-      <Link to="/projects" className="flex items-center gap-2 hover:underline text-sm text-amber-100">
+        <h2 className="text-4xl">10</h2>
+      <Link to="/projects" className="flex items-center gap-2 hover:underline text-sm text-gray-800">
         <FontAwesomeIcon icon={faPaperclip} size="xs" />
         See your latest project
       </Link>
     
     </div>
-    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
-      Running Projects
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between ">
+     <div className='flex  items-center w-full gap-6'>
+        <p>Running Porjects</p>
+        <div className="border text-black p-2 rounded-full hover:text-gray-500">
+          <FontAwesomeIcon 
+          icon={faArrowUp} 
+          className="text-black text-xl inline-block transform rotate-[45deg]" 
+        />
+        </div>
+        </div>
+         <h2 className="text-4xl">12</h2>
+      <Link to="/projects" className="flex items-center gap-2 hover:underline text-sm text-gray-800">
+        <FontAwesomeIcon icon={faPaperclip} size="xs" />
+        See your latest project
+      </Link>
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Pending Projects
     </div>
+    
 
     {/* Middle Row */}
     <div className=" col-span-2 bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
