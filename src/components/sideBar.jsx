@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
@@ -24,10 +24,17 @@ function Sidebar() {
     { name: "Help", icon: faQuestionCircle },
     { name: "Logout", icon: faSignOutAlt },
   ];
+  function sideBar(){
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleSide= () =>{
+      setIsOpen(!isOpen);
+    }
+  }
 
   return (
     <div className="md:w-60 h-full mx-3 rounded-2xl bg-gray-100 shadow-md p-4 fixed top-1.5">
       <h1 className="text-4xl text-green-950 mb-10">Tranquil</h1>
+      
       {/* Menu Section */}
       <div className="mb-6">
         <h2 className="text-black font-semibold mb-3 text-md">MENU</h2>

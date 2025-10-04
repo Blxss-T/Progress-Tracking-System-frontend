@@ -85,7 +85,7 @@ function Dashboard() {
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
      <div className='flex  items-center w-full gap-6'>
-        <p>Running Porjects</p>
+        <p>Pending projects</p>
         <div className="border text-black p-2 rounded-full hover:text-gray-500">
           <FontAwesomeIcon 
           icon={faArrowUp} 
@@ -96,7 +96,7 @@ function Dashboard() {
          <h2 className="text-4xl">2</h2>
       <Link to="/projects" className="flex items-center gap-2 hover:underline text-sm text-gray-800">
         <FontAwesomeIcon icon={faPaperclip} size="xs" />
-        See your latest project
+        On Discuss
       </Link>
     </div>
     
