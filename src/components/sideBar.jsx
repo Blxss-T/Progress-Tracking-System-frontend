@@ -8,7 +8,8 @@ import {
   faChartBar, 
   faCog, 
   faQuestionCircle, 
-  faSignOutAlt 
+  faSignOutAlt, 
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 function Sidebar() {
@@ -34,7 +35,9 @@ function Sidebar() {
   return (
     <div className="md:w-60 h-full mx-3 rounded-2xl bg-gray-100 shadow-md p-4 fixed top-1.5">
       <h1 className="text-4xl text-green-950 mb-10">Tranquil</h1>
-      
+      <button className="" onClick={toggleSide()}>
+        <FontAwesomeIcon icon={faBars} className="text-gray-700 text-xl" />
+      </button>
       {/* Menu Section */}
       <div className="mb-6">
         <h2 className="text-black font-semibold mb-3 text-md">MENU</h2>
