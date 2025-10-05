@@ -112,14 +112,14 @@ function Dashboard() {
       Projects
     </div>
 
-    {/* Bottom Row */}
+    {/* Bottom Row  */}
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Team Collaboration
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Project Progress
     </div>
-    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+    <div className="bg-gradient-to-bl from-green-950 to-green-900 rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Time Tracker
     </div>
   </div>
@@ -128,6 +128,5 @@ function Dashboard() {
     </div>
   )
 }
-//Hello 
 
 export default Dashboard
