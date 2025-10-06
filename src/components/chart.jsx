@@ -1,9 +1,13 @@
-use client ;
+
 import React from 'react'
 
 function chart() {
   return (
-    <div>chart</div>
+    <div>
+      <BarChart >
+        
+      </BarChart>
+    </div>
   )
 }
 
