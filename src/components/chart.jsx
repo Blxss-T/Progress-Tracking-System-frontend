@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Tooltip, XAxis, YAxis } from 'recharts'
 
 function chart() {
   const data =[
@@ -13,7 +14,11 @@ function chart() {
   ]
   return (
     <div>
-      <BarChart  width>
+      <BarChart  width="100%" height={300} data={data}>
+        <XAxis  dataKey={name}/>
+        <YAxis />
+        <Tooltip />
+        <legend />
 
       </BarChart>
     </div>
