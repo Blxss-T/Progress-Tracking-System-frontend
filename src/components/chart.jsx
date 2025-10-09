@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Tooltip, XAxis, YAxis,ResponsiveContainer } from 'recharts'
+import { Tooltip, XAxis, BarChart,Bar,YAxis,ResponsiveContainer } from 'recharts'
 
 function chart() {
   const data =[
@@ -19,8 +19,8 @@ function chart() {
         <XAxis  dataKey="name"/>
         <YAxis />
         <Tooltip />
-        <legend />
-        <Bar dataKey="name" />
+        <Legend />
+        <Bar dataKey="contributions" />
 
        
 
