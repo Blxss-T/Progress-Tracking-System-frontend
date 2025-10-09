@@ -2,15 +2,16 @@
 import React from 'react'
 import { Tooltip, XAxis, BarChart,Bar,YAxis,ResponsiveContainer } from 'recharts'
 
-function chart() {
+const weekDays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+function Chart() {
   const data =[
-    {name:"Monday", contributions:790},
-    {name:"Tuesday", contributions:790},
-    {name:"Wednesday", contributions:790},
-    {name:"Thursday", contributions:790}, 
-    {name:"Friday", contributions:790}, 
-    {name:"Saturday", contributions:790}, 
-    {name:"Sunday", contributions:790}
+    {contributions:790},
+    { contributions:790},
+    {contributions:790},
+    { contributions:890}, 
+    { contributions:90}, 
+    {contributions:90}, 
+    { contributions:790}
   ]
   return (
     <div>
@@ -20,10 +21,7 @@ function chart() {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="contributions" />
-
-       
-
+        <Bar dataKey="contribution" />
       </BarChart>
       </ResponsiveContainer>
     </div>
