@@ -22,11 +22,14 @@ function Chart() {
         <Legend />
         <Bar
          dataKey="contribution" 
-         fill="064232"/>
+         fill="064232"
+         barSize={40}
+         radius={[10,10,10,10]}
+         isAnimationActive={true}/>
       </BarChart>
       </ResponsiveContainer>
     </div>
   )
 }
 
-export default chart
+export default Chart

@@ -5,6 +5,7 @@ import { faFolder } from "@fortawesome/free-solid-svg-icons";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import Chart from './chart';
 
 
 function Dashboard() {
@@ -103,7 +104,7 @@ function Dashboard() {
 
     {/* Middle Row */}
     <div className=" col-span-2 bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
-      Project Analytics
+      <Chart />
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
       Reminders
