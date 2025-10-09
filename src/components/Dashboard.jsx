@@ -10,16 +10,16 @@ import Chart from './chart';
 
 function Dashboard() {
   return (
-    <div className='ml-64 min-h-screen rounded-2xl bg-gray-100 p-4 mt-1.5 mr-1'>
+    <div className='md:ml-64 min-h-screen rounded-2xl bg-gray-100 p-4 mt-1.5 mr-1'>
       
       {/* Header Section */}
-      <div className='flex flex-wrap justify-between p-1 '>
+      <div className='flex flex-wrap justify-between items-center p-1 gap-2'>
         <h2 className='text-3xl font-medium'>Dashboard</h2>
         <div className='flex gap-1 flex-wrap'>
-          <button className="w-42 bg-gradient-to-br from-green-950 to-green-700 text-white p-2 rounded-3xl">
+          <button className="px-4 py-2 bg-gradient-to-br from-green-950 to-green-700 text-white  p-2 rounded-3xl sm:text-base">
             Add Project
           </button>
-          <button className='w-40 border-3 border-green-950 text-green-950 p-2 rounded-3xl hover:bg-emerald-100'>
+          <button className="px-4 py-2 border border-green-950 text-green-950 p-2 rounded-3xl hover:bg-emerald-100 sm:text-base">
             Import
           </button>
         </div>
