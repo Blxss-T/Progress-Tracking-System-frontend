@@ -20,9 +20,9 @@ function chart() {
         <YAxis />
         <Tooltip />
         <legend />
-        <Bar>
-          
-        </Bar>
+        <Bar dataKey="name" />
+
+       
 
       </BarChart>
       </ResponsiveContainer>
