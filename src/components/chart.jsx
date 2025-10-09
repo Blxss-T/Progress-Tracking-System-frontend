@@ -20,7 +20,9 @@ function Chart() {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="contribution" />
+        <Bar
+         dataKey="contribution" 
+         fill="064232"/>
       </BarChart>
       </ResponsiveContainer>
     </div>
