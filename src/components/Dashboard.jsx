@@ -28,14 +28,14 @@ function Dashboard() {
       <p>Plan, prioritize, and accomplish with ease.</p>
 
       {/* Dashboard Grid Section */}
-<div className="p-4 bg-gray-100">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-full text-xl">
+<div className="p-2 sm:p-4 bg-gray-100">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-full text-base sm:text-lg md:text-xl">
 
     {/* Total Projects Card */}
     <div className="bg-gradient-to-bl from-green-950 via-green-900 to-green-800 
-                    text-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
+                    text-white rounded-2xl shadow p-4 min-h[10rem] flex flex-col justify-between">
       <div className='flex justify-between items-center w-full'>
-        <p>Total Projects</p>
+        <p className='text-sm sm:text-base break-words'>Total Projects</p>
         <div className="bg-green-50 text-black p-2 rounded-full hover:text-gray-500">
           <FontAwesomeIcon 
   icon={faArrowUp} 
@@ -53,7 +53,7 @@ function Dashboard() {
     {/* Other summary cards */}
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
       <div className='flex  items-center w-full gap-6'>
-        <p>Ended Projects</p>
+        <p className='text-sm sm:text-base break-words'>Ended Projects</p>
         <div className="border text-black p-2 rounded-full hover:text-gray-500">
           <FontAwesomeIcon 
           icon={faArrowUp} 
@@ -70,7 +70,7 @@ function Dashboard() {
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between ">
      <div className='flex  items-center w-full gap-6'>
-        <p>Running Porjects</p>
+        <p className='text-sm sm:text-base break-words'>Running Porjects</p>
         <div className="border text-black p-2 rounded-full hover:text-gray-500">
           <FontAwesomeIcon 
           icon={faArrowUp} 
@@ -86,7 +86,7 @@ function Dashboard() {
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
      <div className='flex  items-center w-full gap-6'>
-        <p>Pending projects</p>
+        <p className='text-sm sm:text-base break-words'>Pending projects</p>
         <div className="border text-black p-2 rounded-full hover:text-gray-500">
           <FontAwesomeIcon 
           icon={faArrowUp} 
@@ -103,7 +103,7 @@ function Dashboard() {
     
 
     {/* Middle Row */}
-    <div className=" col-span-2 bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+    <div className=" col-span-1 sm:col-span-2 bg-white rounded-2xl shadow p-4 min-h-[18rem] flex items-center justify-center">
       <Chart />
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
