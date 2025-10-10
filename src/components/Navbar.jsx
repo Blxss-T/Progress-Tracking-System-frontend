@@ -5,6 +5,7 @@ import {
   faBell,
   faSearch,
   faBars,
+  faEllipsisV
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import profilePic from "../assets/hihi.jpg";
@@ -24,7 +25,7 @@ function Navbar() {
   return (
     <div className="flex items-center justify-between p-2 bg-gray-100 shadow-md rounded-2xl md:ml-64 mt-1.5 w-full md:w-[81%] font-Montserrat mr-1.5">
       {/* 🔎 Search Bar (hidden on small, shown on md+) */}
-      <div className="relative w-1/3 block sm:hidden">
+      <div className="relative  w-1/3 block sm:hidden">
         <FontAwesomeIcon
           icon={faSearch}
           className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -48,7 +49,7 @@ function Navbar() {
         className="block md:hidden p-2 text-gray-600 hover:text-blue-500"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faEllipsisV} />
       </button>
 
       {/* Desktop Icons + Profile */}
