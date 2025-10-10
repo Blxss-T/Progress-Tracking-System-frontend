@@ -5,6 +5,7 @@ import Mails from './Pages/Mails';
 import Notification from './Pages/Notification';
 import Sidebar from './components/sideBar';
 import Dashboard from './components/Dashboard';
+import Chart from './components/chart';
 
 function App() {
   return (
