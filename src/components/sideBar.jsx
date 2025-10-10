@@ -47,7 +47,7 @@ function Sidebar() {
         className={`md:w-60 h-full mx-3 rounded-2xl bg-gray-100 shadow-md p-4 fixed top-1.5 transition-transform duration-300 
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
-        <div className="flex justify-between items-center mb-10">
+        <div className=" block sm:flex jsm:ustify-between sm:items-center sm:mb-10">
           <h1 className="text-4xl text-green-950 font-bold">Tranquil</h1>
         </div>
 
