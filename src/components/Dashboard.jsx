@@ -110,9 +110,9 @@ function Dashboard() {
       <h2>Reminders</h2>
       <span className='text-green-900'>Meeting with Arc Company</span>
       <p className='text-sm text-gray-700'>Time: 2:00pm - 4:00pm </p>
-      <button className='flex items-center text-white bg-gradient-to-br from-green-900 to-green-800 rounded-2xl p-1'>
+      <button className='flex items-center text-sm text-white bg-gradient-to-br from-green-900 to-green-800 rounded-2xl p-1'>
         <FontAwesomeIcon icon={faVideoCamera} size='md' />
-        Start the meeting</button>
+        <p className='text-sm sm:text-base break-words'>Start the meeting</p></button>
     </div>
     <div className="bg-white row-span-2 rounded-2xl shadow p-4  flex items-center justify-center">
       Projects
