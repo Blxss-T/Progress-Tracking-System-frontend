@@ -1,7 +1,7 @@
 import React from 'react'
 import UserGreeting from './userGreeting'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFolder } from "@fortawesome/free-solid-svg-icons";
+import { faFolder, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -106,9 +106,13 @@ function Dashboard() {
     <div className=" col-span-1 sm:col-span-2 bg-white rounded-2xl shadow p-4 min-h-[18rem] flex items-center justify-center">
       <Chart />
     </div>
-    <div className="bg-white rounded-2xl shadow p-4 h-40 flex items-center justify-center">
+    <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
       <h2>Reminders</h2>
-      <span>Meeting with Arc Company</span>
+      <span className='text-green-900'>Meeting with Arc Company</span>
+      <p className='text-sm text-gray-700'>Time: 2:00pm - 4:00pm </p>
+      <button className='flex items-center bg-gradient-to-br from-green-900 to-green-800 rounded-2xl p-1'>
+        <FontAwesomeIcon icon={faVideoCamera} size='md' />
+        Start the meeting</button>
     </div>
     <div className="bg-white row-span-2 rounded-2xl shadow p-4  flex items-center justify-center">
       Projects
