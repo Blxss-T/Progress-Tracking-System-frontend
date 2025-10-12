@@ -9,6 +9,9 @@ import Chart from './chart';
 
 
 function Dashboard() {
+  const navItems={
+
+  }
   return (
     <div className='md:ml-64 min-h-screen rounded-2xl bg-gray-100 p-4 mt-1.5 mr-1'>
       
@@ -107,10 +110,10 @@ function Dashboard() {
       <Chart />
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
-      <h2>Reminders</h2>
-      <span className='text-green-900'>Meeting with Arc Company</span>
+      <h2 className='text-sm sm:text-base break-words font-black'>Reminders</h2>
+      <span className='text-green-900 font-semibold'>Meeting with Arc Company</span>
       <p className='text-sm text-gray-700'>Time: 2:00pm - 4:00pm </p>
-      <button className='flex items-center text-sm text-white bg-gradient-to-br from-green-900 to-green-800 rounded-2xl p-1'>
+      <button className='flex items-center text-sm text-white bg-gradient-to-br from-green-900 to-green-800 rounded-2xl p-1 gap-2'>
         <FontAwesomeIcon icon={faVideoCamera} size='md' />
         <p className='text-sm sm:text-base break-words'>Start the meeting</p></button>
     </div>
