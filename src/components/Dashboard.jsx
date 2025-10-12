@@ -9,10 +9,12 @@ import Chart from './chart';
 
 
 function Dashboard() {
-  const projectItems={
+  const projectItems=[
     {title:"Develop API endpoints", due:"November 23rd"};
 
-  }
+  ];
+    
+  
   return (
     <div className='md:ml-64 min-h-screen rounded-2xl bg-gray-100 p-4 mt-1.5 mr-1'>
       
