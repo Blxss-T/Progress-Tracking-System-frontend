@@ -9,7 +9,8 @@ import Chart from './chart';
 
 
 function Dashboard() {
-  const navItems={
+  const projectItems={
+    {title:"Develop API endpoints", due:"November 23rd"};
 
   }
   return (
