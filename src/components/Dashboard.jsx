@@ -110,7 +110,7 @@ function Dashboard() {
       <Chart />
     </div>
     <div className="bg-white rounded-2xl shadow p-4 h-40 flex flex-col justify-between">
-      <h2 className='text-sm sm:text-base break-words font-black'>Reminders</h2>
+      <h2 className='text-sm sm:text-base break-words'>Reminders</h2>
       <span className='text-green-900 font-semibold'>Meeting with Arc Company</span>
       <p className='text-sm text-gray-700'>Time: 2:00pm - 4:00pm </p>
       <button className='flex items-center text-sm text-white bg-gradient-to-br from-green-900 to-green-800 rounded-2xl p-1 gap-2'>
