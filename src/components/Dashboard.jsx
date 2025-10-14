@@ -123,7 +123,7 @@ function Dashboard() {
         <p className='text-sm sm:text-base break-words'>Start the meeting</p></button>
     </div>
     <div className="bg-white row-span-2 rounded-2xl shadow p-4  flex items-center justify-center">
-      Projects
+        <div></div>
     </div>
 
     {/* Bottom Row  */}
