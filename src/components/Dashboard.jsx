@@ -12,6 +12,7 @@ function Dashboard() {
   const projectItems=[
     {imagetitle:"Develop API endpoints", due:"November 23rd"},
     { imagetitle: "Design landing page", due: "November 30th" },
+    { imagetitle: "Fix database issues", due: "December 5th" },
 
   ];
     
