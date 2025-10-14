@@ -10,7 +10,8 @@ import Chart from './chart';
 
 function Dashboard() {
   const projectItems=[
-    {imagetitle:"Develop API endpoints", due:"November 23rd"}
+    {imagetitle:"Develop API endpoints", due:"November 23rd"},
+    { imagetitle: "Design landing page", due: "November 30th" },
 
   ];
     
