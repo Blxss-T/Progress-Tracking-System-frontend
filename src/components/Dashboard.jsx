@@ -129,7 +129,7 @@ function Dashboard() {
           key={index}
           className="flex items-start gap-3 bg-gray-100 p-3 rounded-2xl mb-2 shadow-sm"
         >
-          <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
+         
           <div>
             <h3 className="font-semibold text-gray-800">{item.imagetitle}</h3>
             <p className="text-sm text-gray-500">{item.due}</p>

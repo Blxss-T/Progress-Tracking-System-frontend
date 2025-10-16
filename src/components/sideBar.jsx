@@ -44,7 +44,7 @@ function Sidebar() {
 
       {/* Sidebar */}
       <div
-        className={`md:w-60 h-full mx-3 rounded-2xl bg-gray-100 shadow-md p-4 fixed top-1.5 transition-transform duration-300 
+        className={`md:w-60 h-full mx-3 rounded-2xl bg-gray-100 shadow-md p-4 fixed top-1.5 transition-transform duration-100 
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
         <div className=" block sm:flex jsm:ustify-between sm:items-center sm:mb-10">
